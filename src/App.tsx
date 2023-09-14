@@ -15,17 +15,16 @@ function App() {
         </a>
       </div>
       <h1>Hello World</h1>
+      <img src={"https://picsum.photos/500/300?random=1"} alt="random-img" />
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-        <h3>
-          PWA Boilerplate
-        </h3>
+        <h3>PWA Boilerplate</h3>
         <p>Cache all the things!!</p>
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
