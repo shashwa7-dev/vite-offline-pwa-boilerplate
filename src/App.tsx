@@ -20,8 +20,7 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-        <h3>PWA Boilerplate</h3>
-        <p>Cache all the things!!</p>
+    
       </div>
     </div>
   );
