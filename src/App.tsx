@@ -14,7 +14,7 @@ function App() {
           <img src={bananas} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Hello Shashwat</h1>
+      <h1>Hello Shashwa7</h1>
       <img src={"https://picsum.photos/500/300?random=1"} alt="random-img" />
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
