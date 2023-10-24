@@ -1,8 +1,8 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
 import "./index.css";
 import { registerSW } from "virtual:pwa-register";
+const App = lazy(() => import("./App"));
 
 const updateSW = registerSW({
   onNeedRefresh() {
@@ -17,6 +17,8 @@ const updateSW = registerSW({
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <App />
+    <Suspense fallback={<p>Loading...</p>}>
+      <App />
+    </Suspense>
   </React.StrictMode>
 );
